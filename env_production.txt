@@ -1,0 +1,17 @@
+# Hostinger Production Configuration
+# Copy the content below into a file named .env on your Hostinger File Manager (inside the backend folder)
+
+# Database Configuration (Get these from Hostinger > Databases)
+DB_HOST=localhost
+DB_USER=u176779207_spauser
+DB_PASS=ZOT3ch@1606
+DB_NAME=u176779207_spadb
+DB_DIALECT=mysql
+
+# Server Configuration
+PORT=3000
+JWT_SECRET=ThaiSpa-Node-Super-Secret-Key-Change-Me-In-Prod
+
+# Email Configuration (Keep as is if working)
+EMAIL_USER=zot3chpvtltd@gmail.com
+EMAIL_PASSWORD=xdme mber uemg uvzy
