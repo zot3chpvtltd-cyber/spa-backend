@@ -5,7 +5,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const roleMiddleware = require('../middleware/roleMiddleware');
 
 // Protect all routes with Auth and MasterAdmin role
-router.use(authMiddleware, roleMiddleware(['MasterAdmin']));
+router.use(authMiddleware, roleMiddleware(['master_admin']));
 
 router.get('/spas', masterAdminController.getAllSpas);
 router.post('/spas', masterAdminController.createSpa);

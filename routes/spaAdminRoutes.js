@@ -5,7 +5,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const roleMiddleware = require('../middleware/roleMiddleware');
 
 // Protect all routes with Auth and Admin role
-router.use(authMiddleware, roleMiddleware(['Admin', 'SpaOwner']));
+router.use(authMiddleware, roleMiddleware(['spa_admin', 'master_admin']));
 
 router.get('/dashboard', spaAdminController.getDashboardStats);
 router.get('/bookings', spaAdminController.getBookings);
